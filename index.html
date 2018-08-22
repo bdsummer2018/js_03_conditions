@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script>
+        /*
         //condition ? true_action : false_action
 
         var x = 3;
@@ -11,6 +12,38 @@
 
         var y = x > 3 ? ">3" : (x === 3 ? "=3" : "<3");
         alert(y);
+        */
+
+
+        //Examle01
+        /*var bathVolume = parseFloat(prompt("Enter the volume of bath"));
+        var bucketVolume = parseFloat(prompt("Enter the volume of bucket"));
+        var bucketCount = parseInt(prompt("Enter the count of bucket"));
+
+        var allBucketVolume = bucketVolume * bucketCount;
+
+        allBucketVolume < bathVolume/2
+            ? alert("dazhe ne nalil polovinu")
+            : allBucketVolume === bathVolume/2
+                ? alert("vi nalili rovno polovinu")
+                : allBucketVolume <= bathVolume
+                    ? alert("optimalno")
+                    : alert("perelil")*/
+
+
+        var bathVolume = parseFloat(prompt("Enter the volume of bath"));
+        var bucketVolume = parseFloat(prompt("Enter the volume of bucket"));
+        var bucketCount = parseInt(prompt("Enter the count of bucket"));
+
+        var allBucketVolume = bucketVolume * bucketCount;
+
+        if(allBucketVolume < bathVolume/2) alert("Menshe polovini");
+        else if(allBucketVolume === bathVolume/2) alert("polovina");
+        else if(allBucketVolume <= bathVolume) alert("Bolshe polovini");
+        else alert("perelil");
+
+
+
 
 
     </script>
